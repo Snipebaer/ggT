@@ -6,8 +6,6 @@ int gcd(int a, int b) {
         return a;
 
     return gcd(b, a % b);
-
-
 }
 
 int main() 
@@ -20,5 +18,7 @@ int main()
     printf("Gebe eine 2. Zahl ein: ");
     scanf("%d", &zahlB);
 
-    printf(gcd(zahlA, zahlB));
+    printf("%d\n",gcd(zahlA, zahlB));
+
+    return 0;
 }
