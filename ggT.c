@@ -1,24 +1,26 @@
 #include <stdio.h>
 
-int gcd(int a, int b) {
+int berechne_ggT(int a, int b) {
 
     if (b == 0) 
         return a;
 
-    return gcd(b, a % b);
+    return berechne_ggT(b, a % b);
 }
 
 int main() 
 {
-    int zahlA, zahlB;
+    int zahlA, zahlB, ggT;
 
     printf("Gebe eine Zahl ein: ");
     scanf("%d", &zahlA);
 
     printf("Gebe eine 2. Zahl ein: ");
     scanf("%d", &zahlB);
-
-    printf("%d\n",gcd(zahlA, zahlB));
+      
+    ggT = berechne_ggT(zahlA, zahlB);
+    printf("%d\n", ggT);
+     
 
     return 0;
 }
