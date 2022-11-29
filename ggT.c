@@ -5,7 +5,7 @@ int berechne_ggT(int a, int b) {
     if (b == 0) 
         return a;
 
-    printf("a: %d ; b: %d\n",a, b);
+    printf("a: %d ; b: %d\n",a, b); //console output for better understanding
 
     return berechne_ggT(b, a % b);
 }
