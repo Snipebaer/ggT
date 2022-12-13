@@ -1,0 +1,5 @@
+# hide executable file created by the Makefile
+ggT
+
+# hide object files created by the Makefile
+*.o
